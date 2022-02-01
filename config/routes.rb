@@ -4,4 +4,6 @@ Rails.application.routes.draw do
       resources :washes, only: [:create]
     end
   end
+
+  resources :washes, only: [:index]
 end
