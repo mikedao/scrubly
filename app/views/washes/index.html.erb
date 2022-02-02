@@ -1,4 +1,10 @@
 <center>
 <h2>Mike has washed his hands <%= pluralize(@count, "time") %> in the past 24 hours.</h2>
 <%= image_tag("mike_washing_hands.jpg", width: 500) %>
+<hr>
+<h3>Text Mike a reminder to wash his hands</h3>
+<%= form_with url: "/text", local: true, method: :post do |form| %>
+  <%= form.text_field :name,  size: 22, placeholder: "Who is sending this text?" %><br><br>
+  <%= form.submit "Send text" %>
+<% end %>
 </center>
