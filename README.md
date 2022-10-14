@@ -1,24 +1,3 @@
-# README
+# Scrubly
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I wanted to know more about my hand washing habits. Uses IFTTT and webhooks to link up with an Amazon Smart Soap Dispenser.
