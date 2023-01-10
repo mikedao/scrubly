@@ -9,7 +9,7 @@ class TwilioService
 
         from = '+18456403940' # Your Twilio number
         to = ENV['MIKES_PHONE_NUMBER'] # Your mobile phone number
-
+        sleep(10)
         client.messages.create(
         from: from,
         to: to,
