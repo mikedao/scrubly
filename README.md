@@ -1,24 +1,10 @@
-# README
+# Set Up
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. clone this repo
+2. `git switch send_mike_a_reminder_text_to_wash_his_hands`
+3. `bundle install`
+4. `rails db:{create,migrate}`
+5. `bundle exec figaro install`
+  * In `application.yml` add the following values: TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, MIKES_PHONE_NUMBER (set this as your number)
+6. In the `TwilioService`, set the `from` variable to be your Twilio number 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
