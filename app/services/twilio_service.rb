@@ -6,10 +6,10 @@ class TwilioService
         account_sid = ENV['TWILIO_ACCOUNT_SID']
         auth_token = ENV['TWILIO_AUTH_TOKEN']
         client = Twilio::REST::Client.new(account_sid, auth_token)
-
+        sleep(10)
         from = '+18456403940' # Your Twilio number
         to = ENV['MIKES_PHONE_NUMBER'] # Your mobile phone number
-        sleep(10)
+        
         client.messages.create(
         from: from,
         to: to,
